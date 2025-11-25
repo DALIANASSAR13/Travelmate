@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Trips</title>
+</head>
+<body>
+  <h2>Search for a Trip</h2>
+
+  <form method="POST" action="/search">
+    <label>Trip Type:</label>
+    <select name="trip_type">
+      <option value="oneway">One Way</option>
+      <option value="roundtrip">Round Trip</option>
+      <option value="multicity">Multi City</option>
+    </select><br><br>
+
+    <label>From Country:</label>
+    <input type="text" name="from_country" required><br><br>
+
+    <label>To Country:</label>
+    <input type="text" name="to_country" required><br><br>
+
+    <label>Departing Date:</label>
+    <input type="date" name="depart_date" required><br><br>
+
+    <label>Returning Date:</label>
+    <input type="date" name="return_date"><br><br>
+
+    <label>Number of Travelers:</label>
+    <input type="number" name="travellers" min="1" required><br><br>
+
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
+
