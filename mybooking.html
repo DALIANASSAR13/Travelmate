@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Booking – CloudTrip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="try.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <span class="brand-name">CloudTrip</span>
+      </a>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary btn-sm" id="logoutBtn">
+          Logout
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="mb-3">My Bookings</h1>
+    <p class="text-muted" id="welcomeText">Loading your account...</p>
+
+    <div id="bookingsContainer" class="mt-4">
+      <!-- في المستقبل هتضيف هنا رحلات المستخدم -->
+      <div class="alert alert-info">
+        No bookings yet. Once you book a flight, it will appear here.
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="mybooking.js"></script>
+</body>
+</html>
