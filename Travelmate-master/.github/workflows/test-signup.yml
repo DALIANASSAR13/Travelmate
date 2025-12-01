@@ -1,4 +1,4 @@
-name: Run Signup Test
+name: Run SignUp Test
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      # Step 4: Run pytest
+
       - name: Run tests
         run: pytest test/testsignup.py
         
