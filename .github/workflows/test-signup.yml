@@ -4,10 +4,13 @@ name: Run Flask Signup Tests
 on:
   push:
     branches:
-      - "*"        # runs on any branch push
+      - "main" 
+      - "testing"
   pull_request:
     branches:
-      - "*"        # runs on any pull request
+      - "main" 
+      - "testing"
+      # runs on any pull request
 
 jobs:
   test:
