@@ -34,8 +34,8 @@ jobs:
       # Step 4: Run pytest
       - name: Run tests
         run: |
-          if [ -f test/testsignup.py ]; then
-            pytest test/testsignup.py
+          if [ -f Travelmate-master/test/testsignup.py ]; then
+            pytest Travelmate-master/test/testsignup.py
           else
-            echo "test/testsignup.py not found, skipping tests."
+            echo "Travelmate-master/test/testsignup.py not found, skipping tests."
           fi
