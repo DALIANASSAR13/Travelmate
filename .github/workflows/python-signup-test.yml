@@ -1,0 +1,26 @@
+name: Python Signup Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-backend-signup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install pytest requests
+
+      - name: Run Signup API Tests
+        run: |
+          pytest tests/test_signup.py
