@@ -32,4 +32,5 @@ jobs:
 
       # Step 4: Run pytest
       - name: Run tests
-        run: pytest test
+        run: pytest test/testsignup.py
+        
