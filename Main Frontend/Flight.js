@@ -70,8 +70,6 @@ const flights = [
 // DOM elements
 const flightListings = document.getElementById('flightListings');
 const loadingSpinner = document.getElementById('loadingSpinner');
-// const filterBtn = document.getElementById('filterBtn');
-// const changeSearchBtn = document.getElementById('changeSearchBtn');
 const selectedFlightTitle = document.getElementById('selectedFlightTitle');
 const selectedFlightName = document.getElementById('selectedFlightName');
 const GoToBookingBtn = document.getElementById('GoToBooking');
@@ -216,9 +214,7 @@ function handleGoToBooking() {
     }
 }
 
-// Event Listeners
-// filterBtn.addEventListener('click', handleFilterClick);
-// changeSearchBtn.addEventListener('click', handleChangeSearchClick);
+
 GoToBookingBtn.addEventListener('click', handleGoToBooking);
 
 // Infinite scroll simulation
