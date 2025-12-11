@@ -1,0 +1,256 @@
+/* Custom Styles for Traveller Details Page */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Step Indicator */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border: 2px solid #dee2e6;
+    background-color: white;
+    color: #6c757d;
+}
+
+.step-circle.completed {
+    background-color: #198754;
+    border-color: #198754;
+    color: white;
+}
+
+.step-circle.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.step-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.step-line {
+    flex: 1;
+    height: 2px;
+    background-color: #dee2e6;
+    margin: 0 10px;
+    position: relative;
+    top: -20px;
+}
+
+.step-line.completed {
+    background-color: #198754;
+}
+
+/* Flight Summary */
+.flight-summary {
+    padding: 10px;
+}
+
+.flight-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e3f2fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-duration {
+    position: relative;
+}
+
+.duration-line {
+    position: relative;
+    height: 2px;
+    background-color: #dee2e6;
+}
+
+.duration-line span {
+    position: relative;
+    top: -12px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.airline-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.american-airlines {
+    background-color: #1E3A8A;
+}
+
+.price-summary {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Traveller Form */
+.traveller-form {
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.traveller-form h5 {
+    font-weight: 600;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 15px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+footer h5, footer h6 {
+    color: #2c3e50;
+}
+
+footer a {
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .step-indicator {
+        max-width: 100%;
+    }
+    
+    .step-label {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .step-indicator {
+        flex-wrap: wrap;
+    }
+    
+    .step {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+    
+    .step-line {
+        display: none;
+    }
+    
+    .card-footer .d-flex {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+    
+    .card-footer .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Form Validation Styles */
+.is-valid {
+    border-color: #198754;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.validation-message {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.valid-feedback {
+    color: #198754;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+}
+
+/* Button Styles */
+.btn-primary {
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.btn-lg {
+    padding: 15px 40px;
+}
+
+/* Animation for form sections */
+.traveller-form {
+    transition: all 0.3s ease;
+}
+
+.traveller-form:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+/* Price Highlight */
+#totalPrice {
+    font-weight: 800;
+}
