@@ -1,0 +1,194 @@
+/* Custom Styles for FlightBooker */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar customization */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+.nav-link {
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+.nav-link:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.4) !important;
+}
+
+
+/* Flight card styling */
+.flight-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.flight-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.airline-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.Emirates-airlines {
+    background-color: #1E3A8A; /* American Airlines blue */
+}
+
+
+.flight-info {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight-times {
+    flex: 2;
+}
+
+.time-display {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.airport-code {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.flight-duration {
+    flex: 1;
+    text-align: center;
+    color: #6c757d;
+    position: relative;
+}
+
+.flight-duration:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dee2e6;
+    z-index: 1;
+}
+
+.flight-duration span {
+    background-color: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.flight-price {
+    flex: 1;
+    text-align: right;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.seats-left {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flight-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .flight-times {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .flight-duration {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .flight-price {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .time-display {
+        font-size: 1.5rem;
+    }
+    
+    .price {
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+}
+
+footer h5, footer h6 {
+    color: #2c3e50;
+}
+
+footer a {
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+/* Button styling */
+.btn-primary {
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+}
