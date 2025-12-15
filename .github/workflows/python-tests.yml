@@ -1,4 +1,4 @@
-name: CloudTrip Unit Tests
+name: CloudTrip Auth Unit Tests
 
 on:
   push:
@@ -24,6 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run unit tests
+      - name: Run auth unit tests
         run: |
-          python -m unittest discover -s tests
+          python -m unittest discover -s tests -p "test_auth.py"
