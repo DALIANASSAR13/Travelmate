@@ -3,7 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 # نستورد من Database.py
-from Database import get_db_connection, init_db  # + تقدر تضيف add_travellers لو هتستخدمها
+from .Database import get_db_connection, init_db
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
