@@ -3,10 +3,10 @@ name: CloudTrip CI
 on:
   push:
     branches:
-      - main
+      - ci/general-workflow
   pull_request:
     branches:
-      - main
+      - ci/general-workflow
 
 jobs:
   test:
