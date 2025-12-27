@@ -237,8 +237,7 @@ function handleGoToPayment() {
     
     alert('Redirecting to secure payment page... In a real application, this would take you to payment processing.');
     
-    // Reset form (in a real app, you wouldn't do this)
-    // document.querySelector('form').reset();
+   
 }
 
 // Function to save form data to localStorage
